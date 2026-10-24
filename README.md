@@ -714,7 +714,7 @@ What is missing today, roughly in the order it is planned:
 - **macOS only tested.** Linux is expected to work. Windows is not supported.
 - **C only.** No C++.
 
-The full design and roadmap are in [`CBUILD_PROJECT.md`](CBUILD_PROJECT.md), written in Italian.
+What already works is summarized in [Status](#status).
 
 ---
 
