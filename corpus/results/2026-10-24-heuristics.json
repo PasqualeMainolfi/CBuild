@@ -1,0 +1,223 @@
+[
+  {
+    "name": "kilo",
+    "difficulty": "easy",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.3
+    },
+    "stage": "heuristics",
+    "targets": [
+      "kilo"
+    ],
+    "missing": []
+  },
+  {
+    "name": "linenoise",
+    "difficulty": "easy",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "stage": "heuristics",
+    "targets": [
+      "linenoise"
+    ],
+    "missing": []
+  },
+  {
+    "name": "parson",
+    "difficulty": "easy",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "stage": "heuristics",
+    "targets": [
+      "parson"
+    ],
+    "missing": []
+  },
+  {
+    "name": "tiny-aes",
+    "difficulty": "easy",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "stage": "heuristics",
+    "targets": [
+      "tiny-aes"
+    ],
+    "missing": []
+  },
+  {
+    "name": "log.c",
+    "difficulty": "easy",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.0
+    },
+    "stage": "heuristics",
+    "targets": [
+      "log"
+    ],
+    "missing": []
+  },
+  {
+    "name": "inih",
+    "difficulty": "easy",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "stage": "heuristics",
+    "targets": [
+      "inih"
+    ],
+    "missing": []
+  },
+  {
+    "name": "cjson",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "stage": "heuristics",
+    "targets": [
+      "cjson"
+    ],
+    "missing": []
+  },
+  {
+    "name": "zlib",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.1
+    },
+    "stage": "failed",
+    "error": "hint: `read` is used without its declaration: add `#include <unistd.h>` at the top of the file / hint: `close` is used without its declaration: add `#include <unistd.h>` at the top of the file / hint: `write` is used without its declaration: add `#include <unistd.h>` at the top of the file / error: could not compile `zlib`"
+  },
+  {
+    "name": "lua",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.5
+    },
+    "stage": "failed",
+    "error": "hint: `lua_closethread` is defined in more than one file: define it in a single .c file and declare it `extern` in the header, or make each copy `static` / hint: `luaL_tolstring` is defined in more than one file: define it in a single .c file and declare it `extern` in the header, or make each copy `static` / hint: `lua_arith` is defined in more than one file: define it in a single .c file and dec"
+  },
+  {
+    "name": "libyaml",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.1
+    },
+    "stage": "failed",
+    "error": "   23 |     *patch = YAML_VERSION_PATCH; /       |              ^~~~~~~~~~~~~~~~~~ / 4 errors generated. / error: could not compile `libyaml`"
+  },
+  {
+    "name": "lz4",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "error: no C source files found (*.c). To build a single file run `cbuild run <file.c>`"
+  },
+  {
+    "name": "wren",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "1 error generated. / hint: `wren_common.h` was not found. If it is part of your project, add its folder to `include_private`; if it comes from a library, install the library and declare it as a dependency / hint: `wren.h` was not found. If it is part of your project, add its folder to `include_private`; if it comes from a library, install the library and declare it as a dependency / error: could n"
+  },
+  {
+    "name": "tree-sitter",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "error: no C source files found (*.c). To build a single file run `cbuild run <file.c>`"
+  },
+  {
+    "name": "nnn",
+    "difficulty": "medium",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.2
+    },
+    "stage": "failed",
+    "error": "hint: `wrefresh$NCURSES60` is declared but never defined: the file defining it is not part of the target, or it comes from a library that is not linked / hint: `write_history` is declared but never defined: the file defining it is not part of the target, or it comes from a library that is not linked / hint: `wtimeout` is declared but never defined: the file defining it is not part of the target, o"
+  },
+  {
+    "name": "zstd",
+    "difficulty": "hard",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "error: no C source files found (*.c). To build a single file run `cbuild run <file.c>`"
+  },
+  {
+    "name": "libuv",
+    "difficulty": "hard",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.5
+    },
+    "stage": "failed",
+    "error": "hint: `windows.h` was not found. If it is part of your project, add its folder to `include_private`; if it comes from a library, install the library and declare it as a dependency / hint: `direct.h` was not found. If it is part of your project, add its folder to `include_private`; if it comes from a library, install the library and declare it as a dependency / hint: `io.h` was not found. If it is "
+  },
+  {
+    "name": "htop",
+    "difficulty": "hard",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "error: 2 files define main(): htop.c, pcp-htop.c. / Run one of them with `cbuild run <file.c>`, or declare one target per program in cbuild.toml"
+  },
+  {
+    "name": "quickjs",
+    "difficulty": "hard",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "error: 5 files define main(): ctest.c, qjs.c, qjsc.c, run-test262.c, unicode_gen.c. / Run one of them with `cbuild run <file.c>`, or declare one target per program in cbuild.toml"
+  },
+  {
+    "name": "raylib",
+    "difficulty": "hard",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.9
+    },
+    "stage": "failed",
+    "error": "hint: `getchar` is used without its declaration: add `#include <stdio.h>` at the top of the file / hint: `TRACELOG` is used before it is declared: include the header that declares it, or declare it above its first use / hint: `emscripten/emscripten.h` was not found. If it is part of your project, add its folder to `include_private`; if it comes from a library, install the library and declare it as"
+  },
+  {
+    "name": "redis",
+    "difficulty": "hard",
+    "heuristics": {
+      "ok": false,
+      "seconds": 0.0
+    },
+    "stage": "failed",
+    "error": "error: 2 files define main(): src/redis-cli.c, src/server.c. / Run one of them with `cbuild run <file.c>`, or declare one target per program in cbuild.toml"
+  }
+]

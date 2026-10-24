@@ -1,0 +1,37 @@
+# Rust build output
+/target/
+
+# Outputs cbuild writes when run inside a project (e.g. while testing in this folder)
+compile_commands.json
+cbuild-agent/
+
+# Superseded drafts of the design document (CBUILD_PROJECT.md is the current one)
+/CBUILD_PROJECT.v*.md
+CBUILD_PROJECT.md
+
+# Local AI tool settings and sessions
+.claude/
+CLAUDE.local.md
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Profiling and debugging leftovers
+*.profraw
+*.profdata
+perf.data*
+__pycache__/

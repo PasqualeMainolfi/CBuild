@@ -1,0 +1,153 @@
+# Real C projects used to measure how often cbuild builds a project with no help.
+# Each one is pinned to a commit, so results stay comparable over time.
+#
+#   executables: programs the plan must contain (target names, case-insensitive)
+#   library:     true if the project's main artifact is a library
+
+# --- easy: small, one folder, no external dependencies ---------------------------
+
+[[project]]
+name = "kilo"
+repo = "https://github.com/antirez/kilo"
+rev = "323d93b29bd89a2cb446de90c4ed4fea1764176e"
+difficulty = "easy"
+executables = ["kilo"]
+
+[[project]]
+name = "linenoise"
+repo = "https://github.com/antirez/linenoise"
+rev = "a473823d74b93eab2ba83480df16ed37617493f2"
+difficulty = "easy"
+library = true
+
+[[project]]
+name = "parson"
+repo = "https://github.com/kgabis/parson"
+rev = "ec53fb6528b45811df9db0db22cab96a94a96a11"
+difficulty = "easy"
+library = true
+
+[[project]]
+name = "tiny-aes"
+repo = "https://github.com/kokke/tiny-AES-c"
+rev = "23856752fbd139da0b8ca6e471a13d5bcc99a08d"
+difficulty = "easy"
+library = true
+
+[[project]]
+name = "log.c"
+repo = "https://github.com/rxi/log.c"
+rev = "f9ea34994bd58ed342d2245cd4110bb5c6790153"
+difficulty = "easy"
+library = true
+
+[[project]]
+name = "inih"
+repo = "https://github.com/benhoyt/inih"
+rev = "2bbdec4a366c8c39746ee0982e7ca0febbb044b6"
+difficulty = "easy"
+library = true
+
+# --- medium: several programs or folders, build logic to translate ---------------
+
+[[project]]
+name = "cjson"
+repo = "https://github.com/DaveGamble/cJSON"
+rev = "6d9f2443ab071f86e5d9b43025a40929ec41c46c"
+difficulty = "medium"
+library = true
+
+[[project]]
+name = "zlib"
+repo = "https://github.com/madler/zlib"
+rev = "767c4c947852e143f582c85f14cf573411df1b35"
+difficulty = "medium"
+library = true
+
+[[project]]
+name = "lua"
+repo = "https://github.com/lua/lua"
+rev = "8cb93bada561977eb370819e39d7d644e5fd0a3f"
+difficulty = "medium"
+executables = ["lua"]
+
+[[project]]
+name = "libyaml"
+repo = "https://github.com/yaml/libyaml"
+rev = "90a56d4500aa1a1798514c5cb55c3ad4cb095f94"
+difficulty = "medium"
+library = true
+
+[[project]]
+name = "lz4"
+repo = "https://github.com/lz4/lz4"
+rev = "90e06d28ca019b4ebaef566f9ce918f0867559e1"
+difficulty = "medium"
+executables = ["lz4"]
+library = true
+
+[[project]]
+name = "wren"
+repo = "https://github.com/wren-lang/wren"
+rev = "99d2f0b8fc2686134b32b18166e037639f7e9f2c"
+difficulty = "medium"
+library = true
+
+[[project]]
+name = "tree-sitter"
+repo = "https://github.com/tree-sitter/tree-sitter"
+rev = "64aaee668e32b184c73ce79f93376f4f7fc62e89"
+difficulty = "medium"
+library = true
+
+[[project]]
+name = "nnn"
+repo = "https://github.com/jarun/nnn"
+rev = "d1ee1633e5330458eebc23f510ab9b34cb5f3718"
+difficulty = "medium"
+executables = ["nnn"]
+
+# --- hard: big, platform-specific code, generated files, special compilation -----
+
+[[project]]
+name = "zstd"
+repo = "https://github.com/facebook/zstd"
+rev = "49cf51799ea051457f57243527aa2058f999f005"
+difficulty = "hard"
+executables = ["zstd"]
+library = true
+
+[[project]]
+name = "libuv"
+repo = "https://github.com/libuv/libuv"
+rev = "19bbf90e1a7a1526da6daa1c79eec2e3ff8b6c55"
+difficulty = "hard"
+library = true
+
+[[project]]
+name = "htop"
+repo = "https://github.com/htop-dev/htop"
+rev = "394b4a3fc0df593a00be452a1862057b88b4eaf7"
+difficulty = "hard"
+executables = ["htop"]
+
+[[project]]
+name = "quickjs"
+repo = "https://github.com/quickjs-ng/quickjs"
+rev = "7a23d8e3fedb010070ef1a03873c55500c7aa1a9"
+difficulty = "hard"
+executables = ["qjs"]
+
+[[project]]
+name = "raylib"
+repo = "https://github.com/raysan5/raylib"
+rev = "d6cb247ca7d3e3adc2b2845492ded642a2305046"
+difficulty = "hard"
+library = true
+
+[[project]]
+name = "redis"
+repo = "https://github.com/redis/redis"
+rev = "ad49ff0d92048fb10d0cb08b074422dc076b2d1f"
+difficulty = "hard"
+executables = ["redis-server", "redis-cli"]
